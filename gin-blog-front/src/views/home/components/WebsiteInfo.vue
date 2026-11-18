@@ -8,7 +8,7 @@ import duration from 'dayjs/plugin/duration'
 import { useAppStore } from '@/store'
 
 dayjs.extend(duration)
-const { blogConfig, viewCount } = storeToRefs(useAppStore())
+const { blogConfig } = storeToRefs(useAppStore())
 
 // 每秒刷新时间
 const runTime = ref('')
@@ -39,10 +39,6 @@ onUnmounted(() => {
       <p>
         <span> 运行时间： </span>
         <span class="float-right"> {{ runTime }} </span>
-      </p>
-      <p>
-        <span> 总访问量： </span>
-        <span class="float-right"> {{ viewCount }} </span>
       </p>
     </div>
   </div>

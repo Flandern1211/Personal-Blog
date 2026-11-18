@@ -19,7 +19,6 @@ const menuOptions = [
   { text: '分类', icon: 'mdi:menu', path: '/categories' },
   { text: '标签', icon: 'mdi:tag', path: '/tags' },
   { text: '关于', icon: 'mdi:information-outline', path: '/about' },
-  { text: '留言', icon: 'mdi:forum', path: '/message' },
 ]
 
 async function logout() {

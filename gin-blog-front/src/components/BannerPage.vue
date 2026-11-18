@@ -42,7 +42,7 @@ const coverUrl = computed(() => {
 <template>
   <!-- 顶部图片：使用 img 标签显示完整图片，可随页面滚动 -->
   <div class="banner-fade-down relative w-full">
-    <img v-if="coverUrl" :src="coverUrl" class="w-full block" alt="banner">
+    <img v-if="coverUrl" :src="coverUrl" class="w-full block max-h-[60vh] object-cover" alt="banner">
     <div v-else class="w-full h-[280px] lg:h-[400px]" style="background: grey" />
     <h1 class="animate-fade-in-down animate-duration-800 absolute inset-0 f-c-c text-3xl font-bold text-light lg:text-4xl">
       {{ props.title }}

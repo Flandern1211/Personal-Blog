@@ -122,7 +122,7 @@ func (s *articleService) GetBlogArticleList(ctx context.Context, query request.F
 	if err != nil {
 		return nil, 0, err
 	}
-	var voList []response.ArticleVO
+	voList := make([]response.ArticleVO, 0, len(list))
 	for _, article := range list {
 		voList = append(voList, s.entityToVO(article))
 	}

@@ -48,8 +48,8 @@ const coverStyle = computed(() => {
 </script>
 
 <template>
-  <div class="banner-fade-down absolute bottom-0 left-0 right-0 h-screen text-center text-white" :style="coverStyle">
-    <div class="absolute inset-x-0 mt-[43vh] text-center space-y-3">
+  <div class="banner-fade-down absolute top-0 left-0 right-0 h-[60vh] text-center text-white" :style="coverStyle">
+    <div class="absolute inset-x-0 mt-[26vh] text-center space-y-3">
       <h1 class="animate-zoom-in text-4xl font-bold lg:text-5xl">
         {{ blogConfig.website_name }}
       </h1>

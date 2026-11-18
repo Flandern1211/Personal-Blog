@@ -26,7 +26,6 @@ const menuOptions = [
     ],
   },
   { text: '关于', icon: 'mdi:information-outline', path: '/about' },
-  { text: '留言', icon: 'mdi:forum', path: '/message' },
 ]
 
 const navClass = ref('nav')
